@@ -26,45 +26,57 @@ let b = 32
 */
 // write your code here
 
+print(a >= b)
+
 
 /*: Question 2
 ### 2. Print the result of a modulo b is equal to zero
 */
 // write your code here
-
+print(a % b == 0)
 
 /*: Question 3
 ### 3. Print the result of y times b less than or equal to a
 */
 // write your code here
-
+print(y * b <= a)
 
 /*: Question 4
 ### 4. Print the inverse of a greater than or equal to b
 */
 // write your code here
 
-
+print(a <= b)
 
 /*: Question 5
 ### 5. Print "true" if a modulo b is equal to zero
 */
 // write your code here
 
-
+if a % b == 0 {
+    print ("true")
+}else {
+    print("false")
+}
 /*: Question 6
 ### 6. Print "true" if a divided by b is greater than x
 */
 // write your code here
 
-
+if a/b > Int(x) {
+    print("true")
+}
 
 /*: Question 7
 ### 7. Print "true" if y divided by x is greater than three, otherwise print false
 */
 // write your code here
 
-
+if y/Int(x) > 3 {
+    print("true")
+}else{
+    print("false")
+}
 
 
 /*: Question 8
@@ -72,6 +84,11 @@ let b = 32
 */
 // write your code here
 
+if y>Int(x) && a/b>9 {
+    print("true")
+}else{
+    print("false")
+}
 
 
 
@@ -80,9 +97,17 @@ let b = 32
 */
 // write your code here
 
+var greatOrNot = true
 
+func isGreater (a: Int , b: Int) -> Bool {
+    if a > b {
+        greatOrNot = true
+    }else{
+        greatOrNot = false
+    };return greatOrNot
+}
 
-
+isGreater(5, b: 2)
 
 
 /*: Question 10
@@ -90,6 +115,23 @@ let b = 32
 */
 // write your code here
 
+func isForceWith (a: String) -> Bool{
+    if a == "Luke" {
+        return true
+    }else if a == "Leia"{
+        return true
+    }else if a == "Anakin" {
+        return true
+    }else if a == "Obi Wan" {
+        return true
+    }else if a == "Yoda" {
+        return true
+    }else if a == "Vader" {
+        return true
+    }else {
+        return false
+    }
+}
 
 
 /*: Question 11
@@ -97,6 +139,12 @@ let b = 32
 */
 // write your code here
 
+func bankAccounts (myAcct: Int, bank: Int){
+    if bank > 10 {
+        bank - 10
+        myAcct + 10
+    }
+}
 
 
 
